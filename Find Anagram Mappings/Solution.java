@@ -19,7 +19,7 @@ class Solution {
 		
 			//Previous use 100, but use 128 so shift can be applied instead of division
 			//This combine position and value to one integer while the sort order will not be spoiled.
-            index[loopIndex] = B[loopIndex]*128+loopIndex; 
+            index[loopIndex] = B[loopIndex]<<7+loopIndex; 
         }
         Arrays.sort(index);
         int min,max,mid,value;
