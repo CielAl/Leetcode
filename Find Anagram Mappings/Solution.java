@@ -2,6 +2,11 @@
 * Problem Link: https://leetcode.com/problems/find-anagram-mappings/description/
 *
 * @author Ciel
+
+* You may also use hashmap.
+* A large array[0~max value] may not be efficient enough since the upperbound are ~10^5 and hence,
+* the overhead of memory allocation is high.
+* Instead of using maps to store the association between position and value, hereby I present a sort based method.
 */
 import java.util.Arrays;
 class Solution {
@@ -13,6 +18,7 @@ class Solution {
         for(;loopIndex<len;loopIndex++){
 		
 			//Previous use 100, but use 128 so shift can be applied instead of division
+			//This combine position and value to one integer while the sort order will not be spoiled.
             index[loopIndex] = B[loopIndex]*128+loopIndex; 
         }
         Arrays.sort(index);
