@@ -1,5 +1,5 @@
 /**
-* Problem Link: //https://leetcode.com/problems/unique-morse-code-words/description/
+* Problem Link: https://leetcode.com/problems/unique-morse-code-words/description/
 *
 * @author Ciel
 
